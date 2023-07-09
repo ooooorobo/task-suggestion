@@ -1,7 +1,4 @@
-import dotenv from 'dotenv'
-import {a} from './t'
+require('dotenv').config()
+import {suggestTasks} from "./model/suggest";
 
-dotenv.config()
-
-console.log('hi12', a);
-console.log(process.env.TOKEN)
+suggestTasks('메인 목표: 위대한 개발자, 서브 목표: 공부').then(tasks => console.log(tasks));
