@@ -7,8 +7,11 @@
     "dev": "nodemon --watch src/**/* --exec 'ts-node' src/index.ts -e ts",
     "start": "ts-node src/index.ts"
   },
+  "engines": {
+    "node": "18"
+  },
   "keywords": [],
-  "author": "",
+  "author": "Yejin Cho <orobos654@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "@types/node": "^20.4.1",
